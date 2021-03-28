@@ -8,4 +8,4 @@ pre-commit:
     tests:
       files: git diff --name-only @{push}
       glob: "*.{js,ts,tsx}"
-      run: npx jest --findRelatedTests {files}
+      run: yarn test:nowatch --findRelatedTests {files}
